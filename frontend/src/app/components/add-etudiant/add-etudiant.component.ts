@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Etudiant, EtudiantService } from '../../services/etudiant.service';
-import { error } from 'console';
+import { CommonModule } from '@angular/common';
+import {FormsModule} from "@angular/forms";
+
 
 @Component({
   selector: 'app-add-etudiant',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './add-etudiant.component.html',
   styleUrl: './add-etudiant.component.scss'
 })
