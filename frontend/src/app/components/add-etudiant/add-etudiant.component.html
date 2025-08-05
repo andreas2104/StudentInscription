@@ -1,18 +1,24 @@
 <p>add-etudiant works!</p>
 <h1>Ajouter etudiant</h1>
 
-<form (submit) = "submit()">
-  <label>Nom:
-    <input [(ngModel)]="etudiant.nom" name="nom" required/>
-  </label><br>
-  <label >Prenom:
+{#
+<form (submit)="submit()">
+  <label
+    >Nom:
+    <input [(ngModel)]="etudiant.nom" name="nom" required /> </label
+  ><br />
+  <label
+    >Prenom:
     <input [(ngModel)]="etudiant.prenom" name="prenom" required />
   </label>
-  <label>Matricule:
-    <input [(ngModel)]="etudiant.matricule" name="matricule" required />
-  </label><br>
-  <label>Email:
-    <input [(ngModel)]="etudiant.email" name="email" required />
-  </label><br><br>
+  <label
+    >Matricule:
+    <input [(ngModel)]="etudiant.matricule" name="matricule" required /> </label
+  ><br />
+  <label
+    >Email:
+    <input [(ngModel)]="etudiant.email" name="email" required /> </label
+  ><br /><br />
   <button type="submit">Ajouter</button>
 </form>
+#}
